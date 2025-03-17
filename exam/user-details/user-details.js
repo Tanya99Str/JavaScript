@@ -21,7 +21,7 @@ async function loadUserInfo() {
             <p><b>Address:</b> ${user?.address?.suite}, ${user?.address?.street}, ${user?.address?.city}, ${user?.address?.zipcode}</p>
             <p><b>Company:</b> ${user?.company?.name}</p>
             <div class="btn-block-more-posts">
-                <button onclick="loadPostsByUser('btnLoadPosts')" id="btnLoadPosts">Posts of current user</button>
+                <button onclick="loadPostsByUser()" id="btnLoadPosts">Posts of current user</button>
             </div>
         `;
     } catch (error) {
@@ -29,8 +29,8 @@ async function loadUserInfo() {
     }
 }
 
-async function loadPostsByUser(btnId) {
-    let btnLoadPosts = document.getElementById(btnId);
+async function loadPostsByUser() {
+    let btnLoadPosts = document.getElementById('btnLoadPosts');
     btnLoadPosts.classList.toggle('display-none');
     try {
         let posts = await fetch('https://jsonplaceholder.typicode.com/posts')
