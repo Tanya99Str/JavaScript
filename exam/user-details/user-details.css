@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Helvetica", "Helvetica Neue", sans-serif;
+    letter-spacing: 0.056rem;
+}
+
+.container {
+    width: 100%;
+    padding: 15px;
+}
+
+.user-info p {
+    font-size: 1em;
+    line-height: 1.4em;
+}
+
+.user-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    margin: auto;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-photo svg {
+    height: 50px;
+}
+
+h1 {
+    font-size: 1.4em;
+    text-align: center;
+    margin: 25px 0;
+}
+
+.posts-block {
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.btn-block-more-posts {
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-block-more-posts button {
+    width: 90%;
+    padding: 15px;
+    background-color: dodgerblue;
+    border: 1px solid dodgerblue;
+    color: #fff;
+    margin: auto;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.btn-block-more-posts button:hover {
+    background-color: white;
+    color: dodgerblue;
+}
+
+.post-block {
+    width: calc(20% - 12px);
+    padding: 15px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    border-radius: 10px;
+}
+
+h2 {
+    font-size: .9em;
+    line-height: 1.2em;
+    text-align: center;
+}
+
+.post-block a {
+    color: dimgray;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.post-block a:hover {
+    color: darkslategray;
+}
+
+.display-none {
+    display: none;
+}
