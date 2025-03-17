@@ -31,10 +31,10 @@ async function loadUserInfo() {
 
 async function loadPostsByUser() {
     let btnLoadPosts = document.getElementById('btnLoadPosts');
-    btnLoadPosts.classList.toggle('display-none');
     try {
         let posts = await fetch('https://jsonplaceholder.typicode.com/posts')
             .then(value => value.json());
+        btnLoadPosts.classList.toggle('display-none');
         let postsBlock = document.getElementById('postsBlock');
         posts.forEach(post => {
             let postBlock = document.createElement('div');
